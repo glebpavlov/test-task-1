@@ -1,6 +1,7 @@
-# Тестовое задание от Павлова Глеба для ***
+# Тестовое задание от Павлова Глеба
 
-Посмотреть можно тут [http://test-work-1.forget-life.ru/](http://test-work-1.forget-life.ru/)
+Само задание тут [Zadanie.docx](https://github.com/winox/example-test-task-1/raw/master/Zadanie.docx)  
+Результат посмотреть можно тут [http://test-work-1.forget-life.ru/](http://test-work-1.forget-life.ru/)
 
 ### Переделал тестовое задание, по своей инициативе. Решил потратить больше времени, и сделать его нормально, на сколько сил хватит за присест)
 
@@ -21,7 +22,4 @@ npm start
 ```
 3)  
 переходим [http://localhost:4200](http://localhost:4200)
-
-## Проверено и работает в Chrome.
-## Firefox не грузит картинки из-за нарушения CORS
 
