@@ -1,0 +1,21 @@
+.header-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 16%);
+  grid-gap: 10px;
+
+  padding-top: 52px;
+  padding-bottom: 20px;
+
+  app-nav {
+    grid-column: 1 / 4
+  }
+
+  app-sorting-select {
+    grid-column: 5
+  }
+
+  app-genre-select {
+    grid-column: 6
+  }
+
+}

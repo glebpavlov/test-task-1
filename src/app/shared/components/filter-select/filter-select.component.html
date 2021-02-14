@@ -1,0 +1,14 @@
+<div [ngClass]="{'active': isActive}" class="select-wrapper" tabindex="0">
+  <span [ngClass]="{'selected': !!value}" class="label">{{label}}</span>
+  <div class="select-wrapper-list">
+    <ul>
+      <li (click)="onClickOption(sortOrderItem.value)"
+          *ngFor="let sortOrderItem of options"
+          [ngClass]="{'selected': value === sortOrderItem.value}"
+      >{{sortOrderItem.label}}</li>
+    </ul>
+    <div (click)="onClickOption(null)"
+         *ngIf="!!value" class="select-reset">Сбросить выбор
+    </div>
+  </div>
+</div>

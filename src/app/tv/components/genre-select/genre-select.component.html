@@ -1,0 +1,6 @@
+<app-filter-select
+  (selectOption)="onSelect($event)"
+  [options]="genresOptions$ | async"
+  [value]="searchState.genreID"
+  placeholder="Телеканалы"
+></app-filter-select>

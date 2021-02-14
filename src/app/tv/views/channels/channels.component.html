@@ -1,0 +1,12 @@
+<ng-container *ngIf="channels$ | async as channels">
+  <div class="channels-count">
+    {{channels.total}} {{+channels.total | pluralCase: ['канал', 'канала', 'каналов']}}
+  </div>
+  <div class="channels-wrapper">
+    <ng-container *ngFor="let channel of channels.channelDetails; trackBy:trackByChannel">
+      <app-channel [channel]="channel"></app-channel>
+    </ng-container>
+  </div>
+  <app-show-more
+    (click)="onAddPage()"></app-show-more>
+</ng-container>

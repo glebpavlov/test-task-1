@@ -1,0 +1,50 @@
+@import "src/assets/styles/variables";
+
+ul {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    cursor: pointer;
+    transition: $transition-medium;
+    font-weight: normal;
+
+    a {
+      padding: 17px 37px;
+      display: inline-block;
+      color: inherit;
+      text-decoration: inherit;
+      position: relative;
+      // на макете нижний бордер с закруглениями сверху
+      &::after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        background: $primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: $transition-medium;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+      }
+    }
+
+    &:hover {
+      color: $primary;
+    }
+
+    &.active {
+      font-weight: bold;
+
+      a::after {
+        opacity: 1;
+      }
+    }
+  }
+}
